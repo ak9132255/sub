@@ -1,1 +1,4 @@
-vless://b4452bd5-baed-4faf-8980-66cab9e4995b@65.109.163.77:80?encryption=none&security=reality&sni=www.google.com&alpn=h2%2Chttp%2F1.1&fp=chrome&pbk=c8roJHyJOftReoYrPdoy03QWzMWwWAB275qDyhkytyw&sid=aac830cc7ab5977b&type=grpc&authority=&serviceName=19a0f365&mode=gun#buraq11
+vless://beb93033-ae3d-4e88-a03c-39bc735a7a11@65.109.163.77:80?encryption=none&security=reality&sni=www.google.com&alpn=h2%2Chttp%2F1.1&fp=chrome&pbk=kK8bRHmk20Nq7js4LGW-s_5Et_INX3nMqu2LrQOrZlo&sid=bfc7c90106cefe98&type=grpc&authority=&serviceName=a9163793&mode=gun#buraq-R
+vless://41dc16dd-d18d-491b-904a-9fb0d5599624@65.109.163.77:46580?encryption=none&security=none&type=splithttp&path=%2F#buraq-SHP
+vless://beb93033-ae3d-4e88-a03c-39bc735a7a11@[2a01:4f9:c010:d140::1]:80?security=reality&encryption=none&alpn=h2,http/1.1&headerType=none&fp=chrome&type=grpc&flow=&sni=www.google.com&pbk=kK8bRHmk20Nq7js4LGW-s_5Et_INX3nMqu2LrQOrZlo&sid=bfc7c90106cefe98&mode=gun&serviceName=a9163793#buraq-ipv6
+
