@@ -1,0 +1,140 @@
+{
+   "inbounds": [
+     {
+       "auto_route": true,
+       "endpoint_independent_nat": false,
+       "inet4_address": "172.19.0.1/30",
+       "mtu": 9000,
+       "platform": {
+         "http_proxy": {
+           "enabled": true,
+           "server": "127.0.0.1",
+           "server_port": 2080
+         }
+       },
+       "sniff": true,
+       "stack": "system",
+       "strict_route": false,
+       "type": "tun"
+     },
+     {
+       "listen": "127.0.0.1",
+       "listen_port": 2080,
+       "sniff": true,
+       "type": "mixed",
+       "users": []
+     }
+   ],
+   "outbounds": [
+     {
+       "outbounds": [
+         "auto",
+         "direct",
+         "hys2+tls",
+         "hys2+tls+ech",
+         "hys2+tls+ech+pqs"
+       ],
+       "tag": "proxy",
+       "type": "selector"
+     },
+     {
+       "interval": "10m",
+       "outbounds": [
+         "hys2+tls",
+         "hys2+tls+ech",
+         "hys2+tls+ech+pqs"
+       ],
+       "tag": "auto",
+       "tolerance": 50,
+       "type": "urltest",
+       "url": "http://www.gstatic.com/generate_204"
+     },
+     {
+       "tag": "direct",
+       "type": "direct"
+     },
+     {
+       "tag": "dns-out",
+       "type": "dns"
+     },
+     {
+       "tag": "block",
+       "type": "block"
+     },
+     {
+       "obfs": {
+         "password": "45y45YYERGERrg",
+         "type": "salamander"
+       },
+       "password": "eui6wb9fpD",
+       "server": "37.27.197.240",
+       "server_port": 59097,
+       "tag": "hys2+tls",
+       "tls": {
+         "enabled": true,
+         "insecure": true
+       },
+       "type": "hysteria2"
+     },
+     {
+       "obfs": {
+         "password": "regergWEFERTEDVsdd",
+         "type": "salamander"
+       },
+       "password": "eui6wb9fpD",
+       "server": "37.27.197.240",
+       "server_port": 48139,
+       "tag": "hys2+tls+ech",
+       "tls": {
+         "ech": {
+           "config": [
+             "-----BEGIN ECH CONFIGS-----",
+             "ADn+DQA1AAAgACDX/9v9Jq8cV32Ot60zpB/oHosYnaEWHCEw1E/OtxifUAAIAAEA",
+             "AQABAAMAAicnAAA=",
+             "-----END ECH CONFIGS-----"
+           ]
+         },
+         "enabled": true,
+         "insecure": true
+       },
+       "type": "hysteria2"
+     },
+     {
+       "obfs": {
+         "password": "WEFWEFEfdsgfsdfsdfsd",
+         "type": "salamander"
+       },
+       "password": "eui6wb9fpD",
+       "server": "37.27.197.240",
+       "server_port": 32582,
+       "tag": "hys2+tls+ech+pqs",
+       "tls": {
+         "ech": {
+           "config": [
+             "-----BEGIN ECH CONFIGS-----",
+             "ADn+DQA1AAAgACCqZQHcGubyh5K0g8knrJnvdpsXakSaUT/Lbnly5ABsdgAIAAEA",
+             "AQABAAMAAicnAAA=",
+             "-----END ECH CONFIGS-----"
+           ]
+         },
+         "enabled": true,
+         "insecure": true
+       },
+       "type": "hysteria2"
+     }
+   ],
+   "route": {
+     "auto_detect_interface": true,
+     "final": "proxy",
+     "rules": [
+       {
+         "clash_mode": "Direct",
+         "outbound": "direct"
+       },
+       {
+         "clash_mode": "Global",
+         "outbound": "proxy"
+       }
+     ]
+   }
+ }
