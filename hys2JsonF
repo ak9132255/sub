@@ -30,9 +30,9 @@
        "outbounds": [
          "auto",
          "direct",
-         "hys2+tls",
-         "hys2+tls+ech",
-         "hys2+tls+ech+pqs"
+         "hy2+tls",
+         "hy2+tls+ech",
+         "hy2+tls+ech+pqs"
        ],
        "tag": "proxy",
        "type": "selector"
@@ -40,9 +40,9 @@
      {
        "interval": "10m",
        "outbounds": [
-         "hys2+tls",
-         "hys2+tls+ech",
-         "hys2+tls+ech+pqs"
+         "hy2+tls",
+         "hy2+tls+ech",
+         "hy2+tls+ech+pqs"
        ],
        "tag": "auto",
        "tolerance": 50,
@@ -63,13 +63,13 @@
      },
      {
        "obfs": {
-         "password": "45y45YYERGERrg",
+         "password": "EERGgergregww344",
          "type": "salamander"
        },
-       "password": "eui6wb9fpD",
+       "password": "3YaJrhwrqz",
        "server": "37.27.197.240",
-       "server_port": 59097,
-       "tag": "hys2+tls",
+       "server_port": 55593,
+       "tag": "hy2+tls",
        "tls": {
          "enabled": true,
          "insecure": true
@@ -78,18 +78,18 @@
      },
      {
        "obfs": {
-         "password": "regergWEFERTEDVsdd",
+         "password": "asdfDASFSDFSDfxcZXC",
          "type": "salamander"
        },
-       "password": "eui6wb9fpD",
+       "password": "3YaJrhwrqz",
        "server": "37.27.197.240",
-       "server_port": 48139,
-       "tag": "hys2+tls+ech",
+       "server_port": 17391,
+       "tag": "hy2+tls+ech",
        "tls": {
          "ech": {
            "config": [
              "-----BEGIN ECH CONFIGS-----",
-             "ADn+DQA1AAAgACDX/9v9Jq8cV32Ot60zpB/oHosYnaEWHCEw1E/OtxifUAAIAAEA",
+             "ADn+DQA1AAAgACC185GOxPzy0WTlayh/WZRz6LLmsl0KxShr1pZF0IJKdgAIAAEA",
              "AQABAAMAAicnAAA=",
              "-----END ECH CONFIGS-----"
            ]
@@ -101,18 +101,18 @@
      },
      {
        "obfs": {
-         "password": "WEFWEFEfdsgfsdfsdfsd",
+         "password": "olvdfkokgvDFASFSDFzxczxc",
          "type": "salamander"
        },
-       "password": "eui6wb9fpD",
+       "password": "3YaJrhwrqz",
        "server": "37.27.197.240",
-       "server_port": 32582,
-       "tag": "hys2+tls+ech+pqs",
+       "server_port": 41257,
+       "tag": "hy2+tls+ech+pqs",
        "tls": {
          "ech": {
            "config": [
              "-----BEGIN ECH CONFIGS-----",
-             "ADn+DQA1AAAgACCqZQHcGubyh5K0g8knrJnvdpsXakSaUT/Lbnly5ABsdgAIAAEA",
+             "ADn+DQA1AAAgACAGQYz493RkezQ0yG+SKepJyNNuVFLLEuOYXeH7x2nAegAIAAEA",
              "AQABAAMAAicnAAA=",
              "-----END ECH CONFIGS-----"
            ]
